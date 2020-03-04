@@ -137,19 +137,25 @@ cv2.destroyAllWindows()
 # In[7]:
 
 
-runthis=0
+runthis = 0
 
 
-# In[6]:
+# In[12]:
 
 
-if runthis == 1
-import sys
-get_ipython().system('{sys.executable} -m jupyter nbconvert --to python detect_dog.ipynb')
+if runthis == 1:
+    import sys
+    get_ipython().system('{sys.executable} -m jupyter nbconvert --to python detect_dog.ipynb')
+
+
+# In[9]:
+
+
+runthis = 1
 
 
 # In[ ]:
 
 
-runthis=1
+
 
