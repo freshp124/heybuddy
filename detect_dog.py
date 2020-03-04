@@ -3,9 +3,10 @@
 
 # # Clone Rep
 
-# In[ ]:
+# In[2]:
 
 
+from IPython import get_ipython
 get_ipython().system('git clone https://github.com/fastai/fastai.git ../fastai')
 
 
@@ -133,9 +134,16 @@ cv2.destroyAllWindows()
 
 # # Convert notebook to script
 
-# In[1]:
+# In[7]:
 
 
+runthis=0
+
+
+# In[6]:
+
+
+if runthis == 1
 import sys
 get_ipython().system('{sys.executable} -m jupyter nbconvert --to python detect_dog.ipynb')
 
@@ -143,5 +151,5 @@ get_ipython().system('{sys.executable} -m jupyter nbconvert --to python detect_d
 # In[ ]:
 
 
-
+runthis=1
 
