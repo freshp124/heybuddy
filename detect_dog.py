@@ -1,17 +1,33 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# # Clone Rep
+
+# In[ ]:
+
+
+get_ipython().system('git clone https://github.com/fastai/fastai.git ../fastai')
+
+
 # # Import
 
-# In[1]:
+# In[ ]:
 
 
-get_ipython().run_cell_magic('capture', '', "#conda install pillow=6.1\nfrom fastai.vision import *\nimport cv2\nimport numpy as np\nimport time\nfrom PIL import Image, ImageDraw, ImageFont\nfrom keras import models\nprint('Loaded')")
+#%%capture
+#conda install pillow=6.1
+from fastai.vision import *
+import cv2
+import numpy as np
+import time
+from PIL import Image, ImageDraw, ImageFont
+from keras import models
+print('Loaded')
 
 
 # # Load the model
 
-# In[2]:
+# In[ ]:
 
 
 #Load the saved model
@@ -23,14 +39,14 @@ print('Model loaded')
 
 # # Initialize Variables and Font
 
-# In[3]:
+# In[ ]:
 
 
 font_type = ImageFont.truetype('arial.ttf', 28)
 leaveupfor = 0
 
 
-# In[4]:
+# In[ ]:
 
 
 fontscale = 1.5
@@ -63,7 +79,7 @@ thickness = 5
 
 # # Launch camera capture and detector
 
-# In[6]:
+# In[ ]:
 
 
 video = cv2.VideoCapture(0)
@@ -116,12 +132,16 @@ cv2.destroyAllWindows()
 
 
 # # Convert notebook to script
-# 
-# jupyter nbconvert --to python nb.ipynb
 
 # In[ ]:
 
 
 import sys
 get_ipython().system('{sys.executable} -m jupyter nbconvert --to python detect_dog.ipynb')
+
+
+# In[ ]:
+
+
+
 
