@@ -3,12 +3,8 @@
 
 # # Clone Rep
 
-# In[2]:
-
-
-from IPython import get_ipython
-get_ipython().system('git clone https://github.com/fastai/fastai.git ../fastai')
-
+# git clone https://github.com/fastai/fastai.git
+# 
 
 # # Import
 
@@ -140,7 +136,7 @@ cv2.destroyAllWindows()
 runthis = 0
 
 
-# In[12]:
+# In[14]:
 
 
 if runthis == 1:
